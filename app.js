@@ -30,10 +30,10 @@ app.post("/",function(req,res){
                 LNAME: lName}}]
   }
   const jsondata=JSON.stringify(data);
-  const url="https://us12.api.mailchimp.com/3.0/lists/4e1be11d4d";
+  const url="";
   const options={
     method:"POST",
-    auth:"sheikh118:d2d164bca22d501bbb50f8490f3c71d6-us12"
+    Auth:""
   }
   const request=http.request(url,options,function(response){
     console.log(response.statusCode);
@@ -54,7 +54,7 @@ app.post("/",function(req,res){
 app.post("/failure",function(req,res){
   res.redirect("/");
 });
-// 4e1be11d4d
+// 
 // https://<dc>.api.mailchimp.com/3.0/
 
-// d2d164bca22d501bbb50f8490f3c71d6-us12
+// hu
